@@ -8,4 +8,4 @@ ReactDOM.render(
     <NavBar />
   </div>,
   document.querySelector("#searchStuff")
-); 
+);
