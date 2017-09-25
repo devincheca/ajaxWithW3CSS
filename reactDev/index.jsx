@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import NavBar from "./navbar.jsx";
-// .\node_modules\.bin\webpack for build
-
+import Init from "./init.jsx";
+import { Provider } from 'react-redux';
+import store from './store.js';
 ReactDOM.render(
   <div>
-    <NavBar />
+    <Provider store={store}>
+      <Init />
+    </Provider>
   </div>,
   document.querySelector("#searchStuff")
 );
